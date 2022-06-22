@@ -1,0 +1,118 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+	  
+    <meta charset="utf-8">
+	  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  
+	<link href="../css/styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" >
+	  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	  
+	  <style>
+#more {display: none;}
+	
+
+</style>
+    <title>Calculator</title>
+  </head>
+  <body>
+	  
+	 <nav class="navbar sticky-topnavbar navbar-light navbar-expand-lg bg-secondary fixed-top">
+
+  <a class="navbar-brand" href="Home.html">
+	<img src="../img/mggy.fw.png" class="mr-3" style="width: 95px" alt="MGY">	 
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link ml-4 text-light" href="../Home.html" >HOME</a>
+      </li>
+		   <li class="nav-item active">
+        <a class="nav-link ml-4 text-light" href="News.html">NEWS </a>
+      </li> 
+		   <li class="nav-item active">
+        <a class="nav-link ml-4 text-light" href="Sport.html" >SPORT</a>
+      </li>
+		   <li class="nav-item active">
+        <a class="nav-link ml-4 text-light" href="Travel.html" >TRAVEL </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  ml-4 text-light" href="Culturel.html" >CULTUREL</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle  ml-4 text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+          MORE
+        </a>
+		  <div class="dropdown-menu">
+          <a class="dropdown-item text-dark" href="Contact.html"  >CONTACT ME</a>
+          <a class="dropdown-item text-dark" href="About.html" id="link">ABOUT ME</a>
+        </div>
+		</li>
+		 <li class="nav-item">
+        <a class="nav-link  ml-4 text-light" href="Sign.html" >SIGN IN</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" action="https://www.google.com/search">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q">
+      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" value="Search" formtarget="_blank">Search</button>
+    </form>
+  </div>
+</nav>
+<form name="hesap" >
+		<div class="container my-3">  
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="calculator card">
+    <input type="text" name="ekran" class="calculator-screen z-depth-1 ekran1" placeholder="0" disabled />
+    <div class="calculator-keys">
+
+        <button type="button" class="operator btn btn-info" value="+">+</button>
+        <button type="button" class="operator btn btn-info" value="-">-</button>
+        <button type="button" class="operator btn btn-info" value="*">&times;</button>
+        <button type="button" class="operator btn btn-info" value="/">&divide;</button>
+
+        <button type="button" value="7" class="btn btn-light waves-effect" style="color:white">7</button>
+        <button type="button" value="8" class="btn btn-light waves-effect" style="color:white">8</button>
+        <button type="button" value="9" class="btn btn-light waves-effect" style="color:white">9</button>
+
+
+
+        <button type="button" value="4" class="btn btn-light waves-effect" style="color:white">4</button>
+        <button type="button" value="5" class="btn btn-light waves-effect" style="color:white">5</button>
+        <button type="button" value="6" class="btn btn-light waves-effect" style="color:white">6</button>
+
+
+        <button type="button" value="1" class="btn btn-light waves-effect" style="color:white">1</button>
+        <button type="button" value="2" class="btn btn-light waves-effect" style="color:white">2</button>
+        <button type="button" value="3" class="btn btn-light waves-effect" style="color:white">3</button>
+
+        <button type="button" class="operator btn btn-info" value="" id="dn">1/x</button> 
+        <button type="button" value="0" class="btn btn-light waves-effect" style="color:white">0</button>
+        <button type="button" class="decimal function btn btn-secondary" value=".">.</button>
+        <button type="button" onclick="clearScreen()" class="btn btn-secondary btn-sm" value="C" id="temizle">AC</button>
+
+        <button type="button" class="equal-sign operator btn btn-default" value="=" style="color:white" name="hesapla" id="hesapla">=</button>
+
+    </div>
+  </div>
+</div>
+</form>
+	  <footer class="text-center">
+      <div class="container bg-secondary">
+        <div class="row">
+          <div class="col-12 text-white">
+            <p>Copyright © 2021 Rights Reserved. | Privacy and Legal | MGY</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+	  <script src="../js/js.js"></script>
+  </body>
+</html>

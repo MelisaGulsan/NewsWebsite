@@ -1,0 +1,166 @@
+﻿@charset "UTF-8";
+body {
+	background-image: url(../../img/bfh.jpg);
+}
+
+a {
+	text-decoration: none;
+}
+
+.navbar button {
+	background-color: #3C3C3C;
+	border-color: #2F2F2F;
+	color: white;
+}
+
+.navbar button:hover {
+	background-color: white;
+	border-color: #C3C3C3;
+	color: black;
+}
+
+.navbar button:checked {
+	background-color: black;
+	border-color: #C3C3C3;
+	color: white;
+}
+
+#link {
+	background-color: #A1A1A1;
+	border: 1px solid white;
+	border-radius: 13px;
+}
+
+.container {
+	background-color: white;
+}
+
+.container button {
+	background-color: #990002;
+	border: 1px solid darkred;
+	border-radius: 4px;
+}
+
+.container button:hover {
+	background-color: #000000;
+	border: 1px solid black;
+	color: white;
+	border-radius: 4px;
+}
+
+.container button:active {
+	background-color: white;
+	color: darkred;
+	border-radius: 4px;
+}
+
+.collapse a:hover {
+	background-color: white;
+	border: 0px solid white;
+	border-radius: 10px;
+}
+
+.bc {
+	background-color: #7E7E7E;
+}
+
+.border a {
+	color: white;
+}
+
+.border a:hover {
+	background-color: whitesmoke;
+	color: #656565;
+	text-decoration: none;
+}
+
+#mgg img {
+	box-shadow: 0px 4px 8px darkred;
+	border: 1px darkred;
+	border-radius: 8px;
+}
+
+#mgg img:hover {
+	border: outset 0px #317ADD;
+	box-shadow: 0px 5px 10px #317ADD;
+}
+
+#by .h4:hover {
+	font-size: 30px;
+}
+
+#by .h6:hover {
+	font-size: 20px;
+}
+
+#imga img {
+	box-shadow: 0px 3px 5px darkred;
+	border: outset 1px #0091CD;
+	border-radius: 10px;
+	opacity: 0.8;
+}
+
+#imga img:hover {
+	opacity: 1;
+	Transform: scale(1.05);
+	border: outset 2px red;
+	box-shadow: 5px 7px 7px darkred;
+}
+
+#ort {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#btn button {
+	font-size: 8px;
+	background-color: #787878;
+	border: outset 2px red;
+}
+
+.op img:hover {
+	Transform: scale(1.1);
+}
+
+.calculator {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+}
+
+.calculator-screen {
+	width: 100%;
+	height: 80px;
+	border: none;
+	background-color: #252525;
+	color: #fff;
+	text-align: right;
+	padding-right: 20px;
+	padding-left: 10px;
+	font-size: 4rem;
+}
+
+.equal-sign {
+	height: 98%;
+	grid-area: 2 / 4 / 6 / 5;
+}
+
+.calculator-keys {
+	display: grid;
+	grid-gap: 20px;
+	padding: 20px;
+}
+
+#temizle{
+	background-color: #252525;
+}
+
+p.v {
+	visibility: hidden;
+}
+

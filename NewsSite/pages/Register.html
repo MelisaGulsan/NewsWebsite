@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	  
+    <meta charset="utf-8">
+	  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  
+	   
+	<link href="../css/styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" >
+	  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	  <script src="../js/js.js"></script>
+	  <style>
+#more {display: none;}
+
+</style>
+    <title>REGISTER</title>
+  </head>
+  <body>
+	  
+	 <nav class="navbar sticky-topnavbar navbar-light navbar-expand-lg bg-secondary fixed-top">
+
+  <a class="navbar-brand" href="Home.html">
+	<img src="../img/mggy.fw.png" class="mr-3" style="width: 95px" alt="MGY">	 
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link ml-4 text-light" href="../Home.html" >HOME</a>
+      </li>
+		   <li class="nav-item active">
+        <a class="nav-link ml-4 text-light" href="News.html">NEWS </a>
+      </li> 
+		   <li class="nav-item active">
+        <a class="nav-link ml-4 text-light" href="Sport.html" >SPORT</a>
+      </li>
+		   <li class="nav-item active">
+        <a class="nav-link ml-4 text-light" href="Travel.html" >TRAVEL </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  ml-4 text-light" href="Culturel.html" >CULTUREL</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle  ml-4 text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+          MORE
+        </a>
+		  <div class="dropdown-menu">
+          <a class="dropdown-item text-dark" href="Contact.html"  >CONTACT ME</a>
+          <a class="dropdown-item text-dark" href="About.html" id="link">ABOUT ME</a>
+        </div>
+		</li>
+		 <li class="nav-item">
+        <a class="nav-link  ml-4 text-light" href="Sign.html" >SIGN IN</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0" action="https://www.google.com/search">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q">
+      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit" value="Search" formtarget="_blank">Search</button>
+    </form>
+  </div>
+</nav>
+	 
+		<div class="container">
+	  	  <div  class="col-12"> <br><br><br><br>
+			<p class="h4 text-center">REGISTER</p> <hr>
+			 <div class="row text-center" id="ort">
+		  	<div class="col-8">
+				 <form action="cal.html" name="myForm" onsubmit="return validateForm()" method="post">
+                    <div class="card mt-4">
+                        <div class="card-body p-3">
+                            <div class="form-group">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="fa fa-user text-info"></i>
+                                        </div>
+                                    </div>
+                                  <input type="text" class="form-control" name="name" placeholder="Name">
+                                </div>
+                            </div>
+							<div class="form-group">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="fa fa-user text-info"></i>
+                                        </div>
+                                    </div>
+                                  <input type="text" class="form-control" name="surname" placeholder=" Surname">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="fa fa-envelope text-info"></i>
+                                        </div>
+                                    </div>
+                                    <input type="email" class="form-control" name="email" title="Example: example@gmail.com" placeholder="E-Posta" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="fa fa-tag text-info"></i>
+                                        </div>
+                                    </div>
+                                    <input type="password" class="form-control collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                          aria-controls="collapseThree" name="pass" id="exampleInputPassword1" placeholder="Password" >
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                  <div class="card-body" style="color:black; font-style: italic;">
+                                    Must contain at least one number and one uppercase and lowercase letter, and min 6 or max 15 characters.
+                                  </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="fa fa-comment text-info"></i>
+                                        </div>
+                                    </div>
+                                   <input type="text" class="form-control" name="day" placeholder=" Birthday">
+                                </div>
+                            </div>
+							 <div class="form-group">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="fa fa-comment text-info"></i>
+                                        </div>
+                                    </div>
+                        <select id="inputState" class="form-control">
+        				<option selected>Department...</option>
+						<option>Engineer</option>
+        				<option>Health</option>
+       					<option>Finance</option>
+       				    <option>Education</option>
+      					</select>
+                                </div>
+                            </div>
+							 <div class="form-group">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="fa fa-comment text-info"></i>
+                                        </div>
+                                    </div>
+                        		<select id="inputState2" class="form-control" name="gender">
+       						 <option selected>Gender...</option>
+							<option>Woman</option>
+							<option>Male</option>
+							</select>
+                                </div>
+                            </div> 
+							<div class="form-group">
+                                <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text">
+                                            <i class="fa fa-comment text-info"></i>
+                                        </div>
+                                    </div>
+                        		<textarea class="form-control" name="text" id="exampleFormControlTextarea1" placeholder="About Me" rows="3"></textarea>
+                                </div>
+                            </div>
+							<div class="form-group">
+                                <div class="input-group mb-2">
+									<label for="exampleFormControlFile1">Upload Your Photo</label>
+                               <input type="file" name="photo" class="form-control-file" id="exampleFormControlFile1">
+                                </div>
+                            </div>
+							<div class="form-group" name="check">
+                    <div class="custom-control custom-checkbox">
+  					<input type="checkbox" class="custom-control-input" id="customCheck1">
+  					<label class="custom-control-label" for="customCheck1"> Autos and Vehicles</label>
+					</div>
+					<div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="customCheck2">
+  					<label class="custom-control-label" for="customCheck2"> Education</label>		
+					</div>
+					<div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="customCheck3">
+  					<label class="custom-control-label" for="customCheck3"> Gaming</label>		
+					</div>
+					<div class="custom-control custom-checkbox">
+					<input type="checkbox" class="custom-control-input" id="customCheck4">
+  					<label class="custom-control-label" for="customCheck4"> Comedy</label>		
+					</div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <input type="submit" value="Register" class="btn btn-info btn-block" checked="alert('Thank you for registering. Welcome!')" required>
+                            </div><br>
+							<div class="text-center">
+							<input class="btn btn-danger float-right" type="reset" value="Reset">
+
+							</div>
+                        </div>
+                </form>
+				
+			</div>
+			  </div>
+			</div>
+		<br>
+	  </div>
+
+	  <footer class="text-center">
+      <div class="container bg-secondary">
+        <div class="row">
+          <div class="col-12 text-white">
+            <p>Copyright © 2021 Rights Reserved. | Privacy and Legal | MGY</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
